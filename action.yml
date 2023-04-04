@@ -4,7 +4,7 @@ description:'GA takes inputs and returns outputs'
 intputs:
    num:
       required: true
-      default: '1'
+      default: "1"
 ouputs:
    num_squared:
      value: ${{ steps.get-square.outputs.num_squared }}
