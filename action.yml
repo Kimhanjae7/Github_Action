@@ -23,6 +23,6 @@ runs:
          echo "INPUT_NUM=${{ inputs.num }}" >> $GITHUB_ENV
       shell: bash
     - name: Fetch the number' square
-      id: get_square
+      id: get-square
       run: python src/get_num_square.py
       shell: bash
