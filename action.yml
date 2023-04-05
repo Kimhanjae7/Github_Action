@@ -1,12 +1,12 @@
 # action.yml
-name:'Custom Github Action'
+name:'Custom GitHub Action'
 description: 'A Github Action that takes an input and returns the square of the number'
 intputs:
    num:
       description: 'Enter a number'
       required: true
       default: "1"
-ouputs:
+outputs:
    num_squared:
      description: 'Square of the input'
      value: ${{ steps.get-square.outputs.num_squared }}
