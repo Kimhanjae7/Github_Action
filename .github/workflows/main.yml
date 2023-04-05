@@ -2,7 +2,7 @@ name: Test Action
 on: [push]
 
 jobs:
-  get-num-sqare:
+  get-num-square:
      runs-on: ubuntu-latest
      name: Returns the number square
      steps:
@@ -13,5 +13,5 @@ jobs:
          uses: ./
          with:
            num: 11
-       - name: print the square
-         run: echo "$${{ steps.get_square.outputs.num_squared }}"
+       - name: Print the square
+         run: echo "${{ steps.get_square.outputs.num_squared }}"
